@@ -19,15 +19,15 @@ VideoTutorial:<br/>
 https://youtu.be/VCasmKdRLc4<br/>
 
 [![IMAGE ALT TEXT HERE](https://i9.ytimg.com/vi/VCasmKdRLc4/mqdefault.jpg?sqp=CKCCpOgF&rs=AOn4CLAWCmzwleC9-XhBMVdmh7-53-tGZQ&time=1560871331928)](https://youtu.be/VCasmKdRLc4)
+<br/>
 
-
-LEGAL:
-// This is free software released into the public domain.
-// Anyone is free to copy, modify, publish, use, compile, sell, or
-// distribute this software, either in source code form or as a compiled
-// binary, for any purpose, commercial or non-commercial, and by any means.
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-// AND NO SUPPORT.
-// author 3d-io GmbH, 2019
+LEGAL:<br/>
+This is free software released into the public domain.<br/>
+Anyone is free to copy, modify, publish, use, compile, sell, or<br/>
+distribute this software, either in source code form or as a compiled<br/>
+binary, for any purpose, commercial or non-commercial, and by any means.<br/>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,<br/>
+AND NO SUPPORT.<br/>
+author 3d-io GmbH, 2019
 
 
