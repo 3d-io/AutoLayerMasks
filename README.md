@@ -18,4 +18,6 @@ www.exr-io.com
 VideoTutorial:
 https://youtu.be/VCasmKdRLc4
 
+[![IMAGE ALT TEXT HERE](https://i9.ytimg.com/vi/VCasmKdRLc4/mqdefault.jpg?sqp=CKCCpOgF&rs=AOn4CLAWCmzwleC9-XhBMVdmh7-53-tGZQ&time=1560871331928)](https://youtu.be/VCasmKdRLc4)
+
 
