@@ -6,7 +6,6 @@
 // AND NO SUPPORT.
 // author 3d-io GmbH, 2019
 
-
 function GetSelectedLayers() {
 	// returns array of all layers that are currently selected (any layers, not just ArtLayer).
 	var resultLayers = new Array();
@@ -36,8 +35,20 @@ function AddMaskFromSelection() {
 	var desc = new ActionDescriptor();
 	desc.putClass(charIDToTypeID("Nw  "), charIDToTypeID("Chnl"));
 	desc.putReference(charIDToTypeID("At  "), ref);
-	desc.putEnumerated( charIDToTypeID("Usng"), charIDToTypeID("UsrM"), charIDToTypeID("RvlS"));
+	desc.putEnumerated(charIDToTypeID("Usng"), charIDToTypeID("UsrM"), charIDToTypeID("RvlS"));
 	executeAction(charIDToTypeID("Mk  "), desc, DialogModes.NO);
+}
+
+function SelectAlpha() {
+	// creates selection based on the alpha of the current doc.selection.
+	var refSel = new ActionReference();
+	refSel.putProperty(charIDToTypeID("Chnl"), charIDToTypeID("fsel"));
+	var refAlpha = new ActionReference();
+	refAlpha.putEnumerated(charIDToTypeID("Chnl"), charIDToTypeID("Chnl"), charIDToTypeID("Trsp"));
+	var desc = new ActionDescriptor();
+	desc.putReference(charIDToTypeID("null"), refSel);
+	desc.putReference(charIDToTypeID("T   "), refAlpha);
+	executeAction( charIDToTypeID("setd"), desc, DialogModes.NO);
 }
 
 function HideAllLayers(layerSet) {
@@ -85,6 +96,12 @@ function MakeMaskedCopy(maskLayer, baseLayer) {
 		maskLayer.visible = true;
 		var channelRef = doc.channels[0];
 		doc.selection.load(channelRef, SelectionType.REPLACE);
+		// check if doc.selection is full image (to determine which cryptomatte mask mode we're using)
+		// if we have alpha mask layer it's always solid.
+		// if we have gradient layer it's solid if selection is full image but then alpha test has same result.
+		if (doc.selection.solid) {
+			SelectAlpha();
+		}
 		doc.activeLayer = copyLayer;
 		AddMaskFromSelection();
 		maskLayer.visible = false;
