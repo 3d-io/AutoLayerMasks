@@ -18,7 +18,7 @@ www.exr-io.com<br/>
 VideoTutorial:<br/>
 https://youtu.be/VCasmKdRLc4<br/>
 
-[![IMAGE ALT TEXT HERE](https://i9.ytimg.com/vi/VCasmKdRLc4/mqdefault.jpg?sqp=CKCCpOgF&rs=AOn4CLAWCmzwleC9-XhBMVdmh7-53-tGZQ&time=1560871331928)](https://youtu.be/VCasmKdRLc4)
+[![Tutorial for masking script for Photoshop](https://img.youtube.com/vi/VCasmKdRLc4/0.jpg)](https://youtu.be/VCasmKdRLc4)
 <br/>
 
 LEGAL:<br/>
